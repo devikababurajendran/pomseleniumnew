@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dashboard</title>
+</head>
+<body align="center">
+<form action="{% url 'submit' %}">
+    <div class="form-group">
+        <label for="title">Todo Title</label>
+        <input type="text" class="form-control" id="title" name="title">
+
+ </div>
+    <div class="form-group">
+        <label for="description">Todo Description</label>
+        <textarea class="form-control" id="descfription" name="description" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="priority">Todo Priority</label>
+        <input type="number" class="form-control" id="priority" name="priority">
+
+    </div>
+    <button type="submit" class="btn-btn-primary" style="margin: 0 auto;display:block">Add</button>
+
+</form>
+
+</body>
+</html>
